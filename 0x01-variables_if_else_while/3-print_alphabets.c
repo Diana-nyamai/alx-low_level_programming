@@ -16,6 +16,8 @@ int main(void)
 	{
 		putchar(Sch);
 		putchar(Bch);
+		Sch++;
+		Bch++;
 	}
 	putchar('\n');
 	return (0);
