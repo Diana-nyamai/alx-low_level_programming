@@ -15,8 +15,8 @@ int main(void)
 	while (Sch <= 'z' && Bch <= 'Z')
 	{
 		putchar(Sch);
-		putchar(Bch);
 		Sch++;
+		putchar(Bch);
 		Bch++;
 	}
 	putchar('\n');
