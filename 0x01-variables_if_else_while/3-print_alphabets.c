@@ -19,10 +19,10 @@ int main(void)
 		Sch++;
 	}
 	while (Bch <= 'Z')
-        {
-                putchar(Bch);
-                Bch++;
-        }
+	{
+		putchar(Bch);
+		Bch++;
+	}
 	putchar('\n');
 	return (0);
 }
