@@ -5,12 +5,12 @@
 /**
  * main - entry point
  *
- * return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-char ch = 'a';
+	char ch = 'a';
 	while (ch  <= 'z')
 	{
 		putchar(ch);
