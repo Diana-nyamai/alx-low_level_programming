@@ -12,13 +12,17 @@ int main(void)
 {
 	int Sch = 'a';
 	int Bch = 'A';
-	while (Sch <= 'z' && Bch <= 'Z')
+
+	while (Sch <= 'z')
 	{
 		putchar(Sch);
 		Sch++;
-		putchar(Bch);
-		Bch++;
 	}
+	while (Bch <= 'Z')
+        {
+                putchar(Bch);
+                Bch++;
+        }
 	putchar('\n');
 	return (0);
 }
