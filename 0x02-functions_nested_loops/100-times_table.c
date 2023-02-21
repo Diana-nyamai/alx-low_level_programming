@@ -26,6 +26,8 @@ void print_times_table(int n)
 					continue;
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
 			}
 			else if (val > 9 && val <= 99)
 			{
@@ -35,12 +37,17 @@ void print_times_table(int n)
 					continue;
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
 			}
 			else
 			{
 				_putchar((val / 100) + '0');
 				_putchar((val / 10 % 10) + '0');
 				_putchar((val % 10) + '0');
+				if (j == n)
+                                        continue;
+                                _putchar(',');
+                                _putchar(' ');
 			}
 		}
 		_putchar('\n');
