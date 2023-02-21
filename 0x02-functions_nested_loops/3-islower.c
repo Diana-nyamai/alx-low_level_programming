@@ -2,7 +2,7 @@
 
 /**
  * int _islower - descr
- *
+ * Description: function uses_putchar to  print
  * Return: 0
  */
 
