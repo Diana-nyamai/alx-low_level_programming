@@ -24,7 +24,7 @@ void print_times_table(int n)
 				_putchar(val + '0');
 				if (j == n)
 					continue;
-				_putchar(',);
+				_putchar(',');
 				_putchar(' ');
 			}
 			else if (val > 9 && val <= 99)
