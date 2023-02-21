@@ -16,7 +16,7 @@ int _isalpha(int c)
 	{
 		for (j = 'a'; j <= 'z'; j++)
 		{
-			if(c == i || c == j)
+			if (c == i || c == j)
 				letter = 1;
 		}
 	}
