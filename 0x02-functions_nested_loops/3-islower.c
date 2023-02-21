@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isLower - main function
+ * _islower - main function
  * @c: input character
  * Description: function uses _putchar to  print
  * Return: 0
