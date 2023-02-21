@@ -9,11 +9,12 @@
 int _islower(int c)
 {
 	char i;
+	int lower = 0;
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		if (c != i)
-			return 0;
+		if (c == i)
+			lower = 1;
 	}
-	return 1;
+	return (lower);
 }
