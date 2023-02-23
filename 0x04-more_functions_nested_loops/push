@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m "More_functions_nested_loops"
+gt push
