@@ -28,6 +28,6 @@ int _atoi(char *s)
 		s++;
 	}
 	if (sign < 0)
-		totsl = (-total);
+		total = (-total);
 	return (total);
 }
