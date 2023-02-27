@@ -16,10 +16,12 @@ void rev_string(char *s)
 
 	while (s[len] != '\0')
 		len++;
-	while (i < len--)
+	while (i < len)
 	{
 		temp = s[i];
-		s[i++] = s[len];
+		s[i] = s[len];
 		s[len] = temp;
+		len--;
+		i++;
 	}
 }
