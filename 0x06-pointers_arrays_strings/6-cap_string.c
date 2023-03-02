@@ -9,33 +9,20 @@ char *cap_string(char *s)
 {
 	int i = 0;
 
-	while (s[i])
+	while (s[i] != '\0')
 	{
-		if (i == 0 && (s[i] >= 'a' && s[i] <= 'z'))
-			s[i] -= 32;
-		if (check_seperators(s[i]) && (s[i + 1] >= 'a' && s[i + 1] <= 'z'))
-			s[i + 1] -= 32;
+		if (s[i] >= 97 && s[i] <= 122)
+		{
+			if (i == 0)
+				s[i] -= 32;
+
+			if (s[i - 1] == 32 || s[i - 1] == 9 || s[i - 1] == 10 || s[i - 1] == 44 ||
+			s[i - 1] == 59 || s[i - 1] == 46 || s[i - 1] == 33 ||
+			s[i - 1] == 63 || s[i - 1] == 34 || s[i - 1] == 40 ||
+			s[i - 1] == 41 || s[i - 1] == 123 || s[i - 1] == 124)
+				s[i] -= 32;
+		}
 		i++;
 	}
 	return (s);
-}
-
-/**
- * check_seperators - Separators of words: space, tabulation, new line,
- * ,, ;, ., !, ?, ", (, ), {, and }
- * @c: an input character
- * Return: 1 if seperator, 0 otherwise
- */
-int check_seperators(char c)
-{
-	int i = 0;
-	char seperators[13] = { ' ', '\t', '\n', ',', ';', '.', '!', '?',
-		'"', '(', ')', '{', '}' };
-
-	for (; i < 13; i++)
-	{
-		if (c == seperators[i])
-			return (1);
-	}
-	return (0);
 }
