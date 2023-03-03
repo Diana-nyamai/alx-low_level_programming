@@ -28,7 +28,7 @@ int big_number(int a)
 
 void print_number(int n)
 {
-	int bigNum = big_number(7);
+	int bigNum = big_number(9);
 
 	if (n < 0)
 	{
