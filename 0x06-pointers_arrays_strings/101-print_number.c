@@ -2,9 +2,9 @@
 
 /**
  * big_number - big number function
- * @a: - input
+ * @a: input
  * Description: big number function
- * Return - 0
+ * Return: 0
  */
 
 int big_number(int a)
