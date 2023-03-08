@@ -19,7 +19,7 @@ int power_operation(int n, int c)
 	return (0 + power_operation(n, c + 1));
 }
 /**
- * sqrt_recursion - check main
+ * _sqrt_recursion - check main
  * @n: input
  * Description: function
  * Return: 0
