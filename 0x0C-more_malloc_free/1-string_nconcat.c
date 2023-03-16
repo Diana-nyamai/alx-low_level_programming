@@ -28,12 +28,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (n >= s2len)
 		n = s2len;
-
 	newMem = malloc(s1len + n + 1);
 
 	if (newMem == NULL)
 		return (NULL);
-
 	i = 0;
 	j = 0;
 
@@ -42,15 +40,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		newMem[i] = s1[i];
 		i++;
 	}
-
 	while (s2[j] != '\0' && j < n)
 	{
 		newMem[i] = s2[j];
 		i++;
 		j++;
 	}
-
 	newMem[i] = '\0';
-
 	return (newMem);
 }
