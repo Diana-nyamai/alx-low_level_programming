@@ -1,3 +1,6 @@
-#ifndef ABS
+#ifndef _HEADERFILE_H
+#define _HEADERFILE_H
+
 #define ABS(x)((x) < (0) ? (x * -1) : (x * 1))
+
 #endif
