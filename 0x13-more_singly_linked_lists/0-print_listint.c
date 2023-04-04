@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
 
 /**
   * print_listint - entry point function
