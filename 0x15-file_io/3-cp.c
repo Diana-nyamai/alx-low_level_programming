@@ -62,8 +62,6 @@ int main(int argc, char *argv[])
   * close_file - entry point
   * @from: input
   * @to: input
-  * @file1: input
-  * @file2: input
   * Return: nothing
   */
 
