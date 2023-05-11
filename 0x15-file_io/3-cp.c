@@ -40,6 +40,8 @@ int main(int argc, char *argv[])
 		} else
 			break;
 	}
+	if (chmod(argv[2], 0664) == 1)
+		exit(101);
 	closef = close(from);
 	if (closef == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from), exit(100);
